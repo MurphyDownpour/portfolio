@@ -10,27 +10,28 @@
     <link rel="shortcut icon" type="image/x-icon" href="./img/favicon/favicon-16x16.png">
     <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"> 
+    <link rel="stylesheet" type="text/css" href="./libs/animate-css/animate.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Мой сайт-портфолио</title>
 </head>
 <body>
     <header class="header">
-        <div class="header-title">Заур Ахмедов</div>
-        <div class="header-slogan">Разработка сайтов <br> HTML5, CSS3, JS, PHP</div>
-        <div class="header-arrow">
+        <div class="header-title animated fadeInUp">Заур Ахмедов</div>
+        <div class="header-slogan animated fadeInUp">Разработка сайтов <br> HTML5, CSS3, JS, PHP</div>
+        <div class="header-arrow animated slideInDown">
             <a href="#portfolio">
                 <i class="fas fa-chevron-down"></i>
             </a>
         </div>
     </header>
     <section id="portfolio" class="portfolio">
-        <div class="container">
+        <div class="container wow fadeInUp" data-wow-offset="10">
             <div class="title">
                 Портфолио
             </div>
             <div class="row">
                 <div class="col-4">
-                    <div class="portfolio-item">
+                    <div class="portfolio-item wow fadeInUp" data-wow-offset="20">
                         <div class="portfolio-image">
                             <img src="img/portfolio/project_organica.jpg" alt="">
                         </div>
@@ -44,7 +45,7 @@
                 </div>
                 <div class="col-4">
                     <div class="col-4">
-                        <div class="portfolio-item">
+                        <div class="portfolio-item wow fadeInUp" data-wow-offset="20">
                             <div class="portfolio-image">
                                 <img src="img/portfolio/project_apollo.jpg" alt="">
                             </div>
@@ -59,7 +60,7 @@
                 </div>
                 <div class="col-4">
                     <div class="col-4">
-                        <div class="portfolio-item">
+                        <div class="portfolio-item wow fadeInUp" data-wow-offset="20">
                             <div class="portfolio-image">
                                 <img src="img/portfolio/project_portfolio.jpg" alt="">
                             </div>
@@ -78,11 +79,11 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 wow fadeInLeft" data-wow-offset="20">
                     <p class="footer-name">Заур Ахмедов</p>
                     <p>Вёрстка и разработка сайтов</p>
                 </div>
-                <div class="col-4">
+                <div class="col-4 wow fadeInUp" data-wow-offset="20">
                     <p class="footer-social">Мои профили в социальных сетях:</p>
                     <p class="footer-social-icons">
                         <a href="https://vk.com/im?sel=189797996" target="_blank">
@@ -99,7 +100,7 @@
                         </a>
                     </p>
                 </div>
-                <div class="col-4">
+                <div class="col-4 wow fadeInRight" data-wow-offset="20">
                     <div>
                         <a href="https://vk.com/im?sel=189797996" class="button" target="_blank">связаться вконтакте</a>
                     </div>
@@ -108,5 +109,7 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="libs/wow-js/wow.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
